@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>파일업로드예제</title>
+</head>
+<body>
+    <h2>파일 업로드</h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+
+        <br>
+        <h4>다중으로 파일 선택시</h4>
+        <input type="file" multiple="multiple" name="files">
+
+        <input type="submit" value="파일저장">
+    </form>
+</body>
+</html>
